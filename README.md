@@ -39,7 +39,7 @@
 
 ## 🌟 Project Overview
 
-**BankGuard** is a fully functional continuous behavioral-authentication prototype. Unlike standard authentication methods (which check identity only once at login), BankGuard **continually verifies** that the logged-in user is indeed the owner throughout the session by analyzing behavioral biometrics:
+**Sentinel** is a fully functional continuous behavioral-authentication prototype. Unlike standard authentication methods (which check identity only once at login), BankGuard **continually verifies** that the logged-in user is indeed the owner throughout the session by analyzing behavioral biometrics:
 
 1. **Typing Dynamics**: Keydown/keyup times, dwell intervals, and flight times.
 2. **Mouse Movements**: Speed, acceleration, jerk, std dev, and straightness.
