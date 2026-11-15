@@ -4,7 +4,7 @@
   
   # 🛡️ Strix
 
-  ### **Continuous Behavioral-Authentication Banking Prototype**
+  ### **Continuous Behavioral-Authentication Banking(Can be deployed to any general purpose website/broswer) Prototype**
   
   *Next-Generation Zero-Trust Security Powered by Real-Time Telemetry and Isolation Forest Anomaly Detection*
 
@@ -25,21 +25,21 @@
 ---
 
 ## 📖 Table of Contents
-* [🌟 Project Overview](#-project-overview)
-* [⚡ Key Features](#-key-features)
-* [⚙️ System Architecture & Data Flow](#️-system-architecture--data-flow)
-* [📊 Adaptive Security Policy Matrix](#-adaptive-security-policy-matrix)
-* [📈 Offline Model Evaluation](#-offline-model-evaluation)
-* [🚀 Getting Started (Live Demo)](#-getting-started-live-demo)
-* [🧠 Machine Learning Pipeline Commands](#-machine-learning-pipeline-commands)
-* [🔒 Security & Cryptographic Details](#-security--cryptographic-details)
-* [📂 Project Layout](#-project-layout)
+* [> Project Overview](#-project-overview)
+* [> Key Features](#-key-features)
+* [> System Architecture & Data Flow](#️-system-architecture--data-flow)
+* [> Adaptive Security Policy Matrix](#-adaptive-security-policy-matrix)
+* [> Offline Model Evaluation](#-offline-model-evaluation)
+* [> Getting Started (Live Demo)](#-getting-started-live-demo)
+* [> Machine Learning Pipeline Commands](#-machine-learning-pipeline-commands)
+* [> Security & Cryptographic Details](#-security--cryptographic-details)
+* [> Project Layout](#-project-layout)
 
 ---
 
-## 🌟 Project Overview
+## > Project Overview
 
-**Sentinel** is a fully functional continuous behavioral-authentication prototype. Unlike standard authentication methods (which check identity only once at login), BankGuard **continually verifies** that the logged-in user is indeed the owner throughout the session by analyzing behavioral biometrics:
+**Strix** is a fully functional continuous behavioral-authentication prototype. Unlike standard authentication methods (which check identity only once at login), Strix **continually verifies** that the logged-in user is indeed the owner throughout the session by analyzing behavioral biometrics:
 
 1. **Typing Dynamics**: Keydown/keyup times, dwell intervals, and flight times.
 2. **Mouse Movements**: Speed, acceleration, jerk, std dev, and straightness.
@@ -49,7 +49,7 @@ These interaction patterns are captured in the browser, summarized into a **37-d
 
 ---
 
-## ⚡ Key Features
+## > Key Features
 
 * **🔌 Real-Time Telemetry Collector**: Captures keystrokes, mouse moves, and scroll dynamics without interfering with the user experience.
 * **🧠 Isolation Forest Anomaly Detection**: Model trained solely on genuine owner behavior. Impostor/negative profiles are never required during fitting—only for calibration.
@@ -59,7 +59,7 @@ These interaction patterns are captured in the browser, summarized into a **37-d
 
 ---
 
-## ⚙️ System Architecture & Data Flow
+## > System Architecture & Data Flow
 
 Below is the runtime flow representing how behavioral interactions are captured, evaluated, and enforced:
 
@@ -84,7 +84,7 @@ graph TD
 
 ---
 
-## 📊 Adaptive Security Policy Matrix
+## > Adaptive Security Policy Matrix
 
 Based on the smoothed trust score, the `PolicyEngine` dynamically limits banking views and operations:
 
@@ -97,7 +97,7 @@ Based on the smoothed trust score, the `PolicyEngine` dynamically limits banking
 
 ---
 
-## 📈 Offline Model Evaluation
+## > Offline Model Evaluation
 
 The Isolation Forest classifier is validated offline against genuine and hard-negative (impostor) sessions. Review the generated curves in the repository (`reports/figures/`):
 
@@ -121,7 +121,7 @@ Shows the separation of scores between genuine (blue) and impostor (red) session
 
 ---
 
-## 🚀 Getting Started (Live Demo)
+## > Getting Started (Live Demo)
 
 Follow these steps to run the interactive banking prototype locally:
 
@@ -189,7 +189,7 @@ python -m ml_pipeline.plot_results --genuine data\processed\genuine.parquet --ne
 
 ---
 
-## 🔒 Security & Cryptographic Details
+## > Security & Cryptographic Details
 
 <details>
 <summary>🔑 Password & Recovery Key Protection</summary>
@@ -215,7 +215,7 @@ If the browser telemetry client loses connection to the Python API or fails to t
 
 ---
 
-## 📂 Project Layout
+## > Project Layout
 
 ```text
 WEB_Lab/
