@@ -1,6 +1,6 @@
 <!-- Centered Header Banner -->
 <div align="center">
-  <img src="assets/banner.jpg" alt="BankGuard Banner" width="900" style="border-radius: 12px; margin-bottom: 20px;">
+   <img src="assets/banner.png" width="100%" alt="STRIX - Continuous Behavioral Authentication">
   
   # 🛡️ Strix
 
